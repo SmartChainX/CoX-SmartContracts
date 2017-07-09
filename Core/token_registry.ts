@@ -1,7 +1,7 @@
 import * as _ from 'lodash';
 import * as chai from 'chai';
 import {chaiSetup} from '../../util/chai_setup';
-import ethUtil = require('ethereumjs-util');
+import Util = require('chainxjs-util');
 import { testUtil } from '../../util/test_util';
 import { TokenRegWrapper } from '../../util/token_registry_wrapper';
 import { ContractInstance } from '../../util/types';
@@ -17,15 +17,6 @@ contract('TokenRegistry', (accounts: string[]) => {
   const owner = accounts[0];
   const notOwner = accounts[1];
 
-  const token = {
-    address: `0x${ethUtil.setLength(ethUtil.toBuffer('0x1'), 20).toString('hex')}`,
-    name: 'testToken',
-    symbol: 'TT',
-    url: 'www.test.com',
-    decimals: 18,
-    ipfsHash: `0x${ethUtil.sha3('test1').toString('hex')}`,
-    swarmHash: `0x${ethUtil.sha3('test2').toString('hex')}`,
-  };
 
   const nullToken = {
     address: constants.NULL_ADDRESS,
