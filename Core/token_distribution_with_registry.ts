@@ -4,7 +4,7 @@ import Web3 = require('web3');
 import * as BigNumber from 'bignumber.js';
 import * as _ from 'lodash';
 import promisify = require('es6-promisify');
-import Util = require('chainx-util');
+import ChainXUtil = require('chainx-util');
 import { Balances } from '../../util/balances';
 import { crypto } from '../../util/crypto';
 import { BNUtil } from '../../util/bn_util';
