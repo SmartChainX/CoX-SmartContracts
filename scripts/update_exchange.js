@@ -9,7 +9,7 @@ const promisify = require('es6-promisify');
   const KOVAN_NETWORK_ID = 42;
   const JSON_RPC_PORT = 8545;
   const NODE_URL = `http://localhost:${JSON_RPC_PORT}`;
-  const ARTIFACTS_DIR = `${__dirname}/../build/contracts`;
+  const ARTIFACTS_DIR = `${__dirname}/../chxbuild/contracts`;
   const CONTRACTS_DIR = `${__dirname}/../contracts`;
 
   const proxyArtifact = require(`${ARTIFACTS_DIR}/Proxy`);
