@@ -1,0 +1,246 @@
+        "type": "bytes32"
+            }
+          ],
+          "name": "LogFill",
+          "type": "event"
+        },
+        "0x67d66f160bc93d925d05dae1794c90d2d6d6688b29b84ff069398a9b04587131": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "maker",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "feeRecipient",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "makerToken",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "takerToken",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "cancelledMakerTokenAmount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "cancelledTakerTokenAmount",
+              "type": "uint256"
+            },
+            {
+              "indexed": true,
+              "name": "tokens",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "orderHash",
+              "type": "bytes32"
+            }
+          ],
+          "name": "LogCancel",
+          "type": "event"
+        },
+        "0x36d86c59e00bd73dc19ba3adfe068e4b64ac7e92be35546adeddf1b956a87e90": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "errorId",
+              "type": "uint8"
+            },
+            {
+              "indexed": true,
+              "name": "orderHash",
+              "type": "bytes32"
+            }
+          ],
+          "name": "LogError",
+          "type": "event"
+        }
+      },
+      "updated_at": 1499299724252,
+      "address": "0x63869171a246622ef8f9234879ce2c06cebd85f6"
+    },
+    "50": {
+      "links": {},
+      "events": {
+        "0xcf8bd4f6ec4f39997290cf18413805f1f190eebd60e32ffc174b56d07a355beb": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "maker",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "taker",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "feeRecipient",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "makerToken",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "takerToken",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "filledBy",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "makerTokenAmount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "takerTokenAmount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "makerFee",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "takerFee",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "expirationTimestampInSec",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "filledTakerTokenAmount",
+              "type": "uint256"
+            },
+            {
+              "indexed": true,
+              "name": "tokens",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "orderHash",
+              "type": "bytes32"
+            }
+          ],
+          "name": "LogFill",
+          "type": "event"
+        },
+        "0x4565177cd5184f550db0ab57b1d5bc808f8e8ba0adcb13fb257f1e7cf019a2b6": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "maker",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "feeRecipient",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "makerToken",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "takerToken",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "makerTokenAmount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "takerTokenAmount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "makerFee",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "takerFee",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "expirationTimestampInSec",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "cancelledtakerTokenAmount",
+              "type": "uint256"
+            },
+            {
+              "indexed": true,
+              "name": "tokens",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "orderHash",
+              "type": "bytes32"
+            }
+          ],
+          "name": "LogCancel",
+          "type": "event"
+        },
+        "0x36d86c59e00bd73dc19ba3adfe068e4b64ac7e92be35546adeddf1b956a87e90": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "errorId",
+              "type": "uint8"
+            },
+            {
+              "indexed": true,
+              "name": "orderHash",
+              "type": "bytes32"
+            }
+          ],
+          "name": "LogError",
+          "type": "event"
+        }
+      },
+      "updated_at": 1495030736784,
+      "address": "0xb69e673309512a9d726f87304c6984054f87a93b"
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1497645336878
+}
