@@ -44,14 +44,14 @@ const promisify = require('es6-promisify');
   const tokenRegistryKovanAddress = getAddressFromArtifactOrThrow(tokenRegistryArtifact);
 
   const web3 = new Web3(new Web3.providers.HttpProvider(NODE_URL));
-  const tokenRegistryContract = web3.eth.contract(tokenRegistryABI);
+  const tokenRegistryContract = web3.chx.contract(tokenRegistryABI);
   const tokenRegistryInstance = tokenRegistryContract.at(tokenRegistryKovanAddress);
 
-  const accounts = await promisify(web3.eth.getAccounts)();
+  const accounts = await promisify(web3.chx.getAccounts)();
   const owner = accounts[0];
   const zrxTokenAddress = await promisify(tokenRegistryInstance.getTokenAddressBySymbol)('ZRX');
-  const exchangeContract = web3.eth.contract(exchangeABI);
-  const gasEstimate = web3.eth.estimateGas({data: exchangeBytecode});
+  const exchangeContract = web3.chx.contract(exchangeABI);
+  const gasEstimate = web3.chx.estimateGas({data: exchangeBytecode});
   const additionalGas = 500000;
   exchangeContract.new(zrxTokenAddress, proxyKovanAddress, {
     data: exchangeBytecode,
