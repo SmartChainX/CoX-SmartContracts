@@ -1,7 +1,7 @@
 import * as _ from 'lodash';
 import * as chai from 'chai';
 import {chaiSetup} from '../../util/chai_setup';
-import Util = require('chainxjs-util');
+import CHXUtil = require('chainxjs-util');
 import { testUtil } from '../../util/test_util';
 import { TokenRegWrapper } from '../../util/token_registry_wrapper';
 import { ContractInstance } from '../../util/types';
